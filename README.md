@@ -3,6 +3,50 @@
 ## Overview
 This project is an implementation of [react-json-schema-form](https://rjsf-team.github.io/react-jsonschema-form/) to dynamically generate a form based on an API response.
 
+---
+API JSON payload
+```json
+{
+   "title": "A registration form",
+   "description": "A simple form example.",
+   "type": "object",
+   "required": [
+     "firstName",
+     "lastName"
+   ],
+   "properties": {
+     "firstName": {
+       "type": "string",
+       "title": "First name",
+       "default": "Chuck"
+     },
+     "lastName": {
+       "type": "string",
+       "title": "Last name"
+     },
+     "age": {
+       "type": "integer",
+       "title": "Age"
+     },
+     "bio": {
+       "type": "string",
+       "title": "Bio"
+     },
+     "password": {
+       "type": "string",
+       "title": "Password",
+       "minLength": 3
+     },
+     "telephone": {
+       "type": "string",
+       "title": "Telephone",
+       "minLength": 10
+     }
+}
+```
+
+---
+
 <img width="1484" alt="Screenshot 2023-10-20 at 8 17 11 AM" src="https://github.com/Malachi-M/json_schema_form_codegen/assets/4195581/a0b20cbd-a683-400c-b66a-81d2671681cb">
 
 
